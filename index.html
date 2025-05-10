@@ -277,7 +277,7 @@
       <input
         id="emailInput"
         type="email"
-        placeholder="Enter your email only after confirming your order…"
+        placeholder="Enter your email…"
         required
         class="flex-grow bg-gray-800 border border-gray-600 text-white placeholder-gray-400 px-4 py-2 rounded focus:outline-none focus:border-blue-500"
       />
@@ -315,9 +315,54 @@
       ❌ Failed to send email. Please try again.
     </div>
 
+    <!-- How to Use Section -->
+    <div class="w-full max-w-3xl mx-auto px-4 my-8">
+      <section
+        class="how-to-use bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700"
+      >
+        <h3 class="text-blue-400 text-xl font-semibold mb-4">How to Use</h3>
+
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-blue-300 text-lg font-medium mb-2">Chatbot</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-300">
+              <li>
+                No setup needed—start typing as soon as the chat window opens.
+              </li>
+              <li>
+                Type your question or request and press
+                <strong class="text-blue-300">Enter</strong> (or click "Send").
+              </li>
+              <li>The bot will reply instantly.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-blue-300 text-lg font-medium mb-2">
+              Call Agent & Email
+            </h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-300">
+              <li>
+                Click <strong class="text-blue-300">Call Agent</strong> to start
+                the voice session.
+              </li>
+              <li>
+                Answer the agent's prompts and complete any confirmation steps.
+              </li>
+              <li>
+                When asked, enter your email in the on-screen field and click
+                <strong class="text-blue-300">Submit</strong>.
+              </li>
+              <li>You'll see a confirmation once your email is recorded.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <!-- Voice Widget -->
     <div class="w-full max-w-3xl mx-auto px-2 my-1 flex justify-center">
-      <elevenlabs-convai agent-id="1wvdfa7r893PzxTCY3Pf"></elevenlabs-convai>
+      <elevenlabs-convai agent-id="kznulqYgdE1Uc6BMbYeJ"></elevenlabs-convai>
     </div>
 
     <!-- Chat Interface -->
