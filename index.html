@@ -277,7 +277,7 @@
       <input
         id="emailInput"
         type="email"
-        placeholder="Enter your email after confirmation…"
+        placeholder="Enter your email…"
         required
         class="flex-grow bg-gray-800 border border-gray-600 text-white placeholder-gray-400 px-4 py-2 rounded focus:outline-none focus:border-blue-500"
       />
@@ -319,41 +319,43 @@
     <div class="w-full max-w-3xl mx-auto px-4 my-8">
       <section
         class="how-to-use bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700"
+        dir="rtl"
       >
-        <h3 class="text-blue-400 text-xl font-semibold mb-4">How to Use</h3>
+        <h3 class="text-blue-400 text-2xl font-semibold mb-4 text-center">
+          كيف تستخدم
+        </h3>
 
         <div class="space-y-6">
           <div>
-            <h4 class="text-blue-300 text-lg font-medium mb-2">Chatbot</h4>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
+            <h4 class="text-blue-300 text-xl font-medium mb-3 text-center">
+              تشات بوت وكول بوت
+            </h4>
+            <ul class="list-disc list-inside space-y-3 text-gray-300 text-lg">
+              <li>لا حاجة للإعداد — ابدأ الكتابة بمجرد فتح نافذة الدردشة.</li>
               <li>
-                No setup needed—start typing as soon as the chat window opens.
+                اكتب سؤالك أو طلبك واضغط على
+                <strong class="text-blue-300">Enter</strong> (أو انقر على
+                "إرسال").
               </li>
-              <li>
-                Type your question or request and press
-                <strong class="text-blue-300">Enter</strong> (or click "Send").
-              </li>
-              <li>The bot will reply instantly.</li>
+              <li>سيجيب الروبوت على الفور.</li>
             </ul>
           </div>
 
           <div>
-            <h4 class="text-blue-300 text-lg font-medium mb-2">
-              Call Agent & Email
+            <h4 class="text-blue-300 text-xl font-medium mb-3 text-center">
+              اتصال بالكول البوت
             </h4>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
+            <ul class="list-disc list-inside space-y-3 text-gray-300 text-lg">
               <li>
-                Click <strong class="text-blue-300">Call Agent</strong> to start
-                the voice session.
+                انقر على <strong class="text-blue-300">اتصال بوت</strong> لبدء
+                الجلسة الصوتية.
               </li>
+              <li>اتبع تعليمات البوت وأكمل أي خطوات تأكيد.</li>
               <li>
-                Answer the agent's prompts and complete any confirmation steps.
+                عند الطلب، أدخل بريدك الإلكتروني في الحقل المعروض على الشاشة
+                وانقر على <strong class="text-blue-300">إرسال</strong>.
               </li>
-              <li>
-                When asked, enter your email in the on-screen field and click
-                <strong class="text-blue-300">Submit</strong>.
-              </li>
-              <li>You'll see a confirmation once your email is recorded.</li>
+              <li>سترى تأكيدًا بمجرد تسجيل بريدك الإلكتروني.</li>
             </ul>
           </div>
         </div>
@@ -422,7 +424,7 @@
 
           try {
             const res = await fetch(
-              "https://kaizen-ai.app.n8n.cloud/webhook/rosaria",
+              "https://kaizen-ai.app.n8n.cloud/webhook-test/rosaria",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
